@@ -1,6 +1,6 @@
 .PHONY: build
 build: tidy ## Build the CLI
-	go build
+	go build ./cmd/kubernetes-event-exporter/
 
 build-image: ## Build the Docker image
 	docker build -t kubernetes-event-exporter .

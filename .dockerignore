@@ -2,4 +2,8 @@
 *
 
 # Include pkg directory
+!cmd/
 !pkg/
+!go.mod
+!go.sum
+!Makefile

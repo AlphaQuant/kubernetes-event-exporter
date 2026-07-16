@@ -1,11 +1,18 @@
 {
     "cSpell.words": [
         "alphaquant",
+        "Buildx",
         "clientset",
         "corev1",
+        "gomod",
+        "GONOSUMCHECK",
+        "GONOSUMDB",
+        "GOPROXY",
         "Kustomization",
+        "ldflags",
         "rcvd",
         "stretchr",
+        "toplevel",
         "zerolog"
     ]
 }
