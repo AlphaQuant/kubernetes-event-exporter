@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/resmoio/kubernetes-event-exporter/pkg/metrics"
+	"github.com/alphaquant/kubernetes-event-exporter/pkg/metrics"
 	"github.com/rs/zerolog/log"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
@@ -57,7 +57,7 @@ func NewEventWatcher(config *rest.Config, namespace string, MaxEventAgeSeconds i
 	return watcher
 }
 
-func (e *EventWatcher) OnAdd(obj interface{}) {
+func (e *EventWatcher) OnAdd(obj interface{}, isInInitialList bool) {
 	event := obj.(*corev1.Event)
 	e.onEvent(event)
 }
