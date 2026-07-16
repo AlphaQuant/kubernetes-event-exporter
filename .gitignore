@@ -120,4 +120,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,windows,macos,go
 
 vendor/
-kubernetes-event-exporter
+/kubernetes-event-exporter
